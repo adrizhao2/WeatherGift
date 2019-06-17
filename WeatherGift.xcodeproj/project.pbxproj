@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		CF7C39E022B58A680073A40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7C39DE22B58A680073A40F /* LaunchScreen.storyboard */; };
 		CF7C39E822B58AE00073A40F /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C39E722B58AE00073A40F /* DetailVC.swift */; };
 		CF7C39EA22B58F550073A40F /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C39E922B58F550073A40F /* ListVC.swift */; };
+		CFCE947922B83E8F0050CE78 /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE947822B83E8F0050CE78 /* WeatherLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CF7C39E122B58A680073A40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF7C39E722B58AE00073A40F /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		CF7C39E922B58F550073A40F /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		CFCE947822B83E8F0050CE78 /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 				A155C412B7F7DB4A7BC38BF7 /* Pods-WeatherGift.debug.xcconfig */,
 				9CA9E1D0FD8B774F0D318EDA /* Pods-WeatherGift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				CF7C39D522B58A660073A40F /* AppDelegate.swift */,
+				CFCE947822B83E8F0050CE78 /* WeatherLocation.swift */,
 				CF44DCA622B5988A004BDFCD /* PageVC.swift */,
 				CF7C39E722B58AE00073A40F /* DetailVC.swift */,
 				CF7C39E922B58F550073A40F /* ListVC.swift */,
@@ -228,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCE947922B83E8F0050CE78 /* WeatherLocation.swift in Sources */,
 				CF7C39EA22B58F550073A40F /* ListVC.swift in Sources */,
 				CF44DCA722B5988A004BDFCD /* PageVC.swift in Sources */,
 				CF7C39D622B58A660073A40F /* AppDelegate.swift in Sources */,
