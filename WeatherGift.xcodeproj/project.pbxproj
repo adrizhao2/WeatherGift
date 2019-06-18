@@ -15,6 +15,7 @@
 		CF7C39E022B58A680073A40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7C39DE22B58A680073A40F /* LaunchScreen.storyboard */; };
 		CF7C39E822B58AE00073A40F /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C39E722B58AE00073A40F /* DetailVC.swift */; };
 		CF7C39EA22B58F550073A40F /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C39E922B58F550073A40F /* ListVC.swift */; };
+		CFA64F5E22B9082000BE5177 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA64F5D22B9082000BE5177 /* Constants.swift */; };
 		CFCE947922B83E8F0050CE78 /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE947822B83E8F0050CE78 /* WeatherLocation.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		CF7C39E122B58A680073A40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF7C39E722B58AE00073A40F /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		CF7C39E922B58F550073A40F /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		CFA64F5D22B9082000BE5177 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CFCE947822B83E8F0050CE78 /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 			children = (
 				CF7C39D522B58A660073A40F /* AppDelegate.swift */,
 				CFCE947822B83E8F0050CE78 /* WeatherLocation.swift */,
+				CFA64F5D22B9082000BE5177 /* Constants.swift */,
 				CF44DCA622B5988A004BDFCD /* PageVC.swift */,
 				CF7C39E722B58AE00073A40F /* DetailVC.swift */,
 				CF7C39E922B58F550073A40F /* ListVC.swift */,
@@ -235,6 +238,7 @@
 				CF44DCA722B5988A004BDFCD /* PageVC.swift in Sources */,
 				CF7C39D622B58A660073A40F /* AppDelegate.swift in Sources */,
 				CF7C39E822B58AE00073A40F /* DetailVC.swift in Sources */,
+				CFA64F5E22B9082000BE5177 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
