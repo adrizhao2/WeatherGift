@@ -88,10 +88,10 @@
 			children = (
 				CF7C39D522B58A660073A40F /* AppDelegate.swift */,
 				CFCE947822B83E8F0050CE78 /* WeatherLocation.swift */,
-				CFA64F5D22B9082000BE5177 /* Constants.swift */,
 				CF44DCA622B5988A004BDFCD /* PageVC.swift */,
 				CF7C39E722B58AE00073A40F /* DetailVC.swift */,
 				CF7C39E922B58F550073A40F /* ListVC.swift */,
+				CFA64F5D22B9082000BE5177 /* Constants.swift */,
 				CF7C39D922B58A660073A40F /* Main.storyboard */,
 				CF7C39DC22B58A680073A40F /* Assets.xcassets */,
 				CF7C39DE22B58A680073A40F /* LaunchScreen.storyboard */,
