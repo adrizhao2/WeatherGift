@@ -59,7 +59,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0F1-n5-T4S">
-                                <rect key="frame" x="0.0" y="268" width="414" height="594"/>
+                                <rect key="frame" x="0.0" y="268" width="414" height="586"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DayWeatherCell" rowHeight="80" id="JlN-wX-OUI" customClass="DayWeatherCell" customModule="WeatherGift" customModuleProvider="target">
@@ -115,10 +115,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0F1-n5-T4S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ppn-IJ-TPF"/>
-                            <constraint firstItem="0F1-n5-T4S" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dWO-BC-Txd"/>
-                            <constraint firstItem="0F1-n5-T4S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="224" id="hO8-Jm-3iE"/>
-                            <constraint firstItem="0F1-n5-T4S" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="y4n-w4-mha"/>
+                            <constraint firstItem="0F1-n5-T4S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="224" id="9iW-hU-OAZ"/>
+                            <constraint firstAttribute="bottom" secondItem="0F1-n5-T4S" secondAttribute="bottom" constant="42" id="ZdN-Jk-YPI"/>
+                            <constraint firstItem="0F1-n5-T4S" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pIc-Nt-k3p"/>
+                            <constraint firstItem="0F1-n5-T4S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xk3-4r-Zqq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
