@@ -13,6 +13,13 @@ import SwiftyJSON
 
 class WeatherLocation {
     
+    struct HourlyForecast {
+        var hourlyTime: Double
+        var hourlyTemperature: Double
+        var hourlyPrecipProb: Double
+        var hourlyIcon: String
+    }
+    
     struct DailyForecast {
         var dailyMaxTemp: Double
         var dailyMinTemp: Double
@@ -28,6 +35,7 @@ class WeatherLocation {
     var currentIcon = ""
     var currentTime = 0.0
     var timeZone = ""
+    var hourlyForecastArray = [HourlyForecast]()
     var dailyForecastArray = [DailyForecast]()
     
     func getWeather(completed: @escaping () -> ()) {
@@ -63,6 +71,7 @@ class WeatherLocation {
                 } else {
                     print("Could not return time.")
                 }
+                
                 let dailyDataArray = json["daily"]["data"]
                 self.dailyForecastArray = []
                 let days = min(7, dailyDataArray.count-1)
@@ -74,6 +83,18 @@ class WeatherLocation {
                     let dailySummary = json["daily"]["data"][day]["summary"].stringValue
                     let newDailyForecast = DailyForecast(dailyMaxTemp: maxTemp, dailyMinTemp: minTemp, dailyDate: dateValue, dailySummary: dailySummary, dailyIcon: icon)
                     self.dailyForecastArray.append(newDailyForecast)
+                }
+                
+                let hourlyDataArray = json["hourly"]["data"]
+                self.hourlyForecastArray = []
+                let hours = min(24, hourlyDataArray.count-1)
+                for hour in 1...hours{
+                    let hourlyTime = json["hourly"]["data"][hour]["time"].doubleValue
+                    let hourlyTemperature = json["hourly"]["data"][hour]["temperature"].doubleValue
+                    let hourlyPrecipProb = json["hourly"]["data"][hour]["precipProbability"].doubleValue
+                    let hourlyIcon = json["hourly"]["data"][hour]["icon"].stringValue
+                    let newHourlyForecast = HourlyForecast(hourlyTime: hourlyTime, hourlyTemperature: hourlyTemperature, hourlyPrecipProb: hourlyPrecipProb, hourlyIcon: hourlyIcon)
+                    self.hourlyForecastArray.append(newHourlyForecast)
                 }
             case .failure(let error):
                 print(error)
